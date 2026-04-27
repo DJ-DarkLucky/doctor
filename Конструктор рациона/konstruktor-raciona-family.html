@@ -142,17 +142,17 @@ h1 {
   object-fit: cover;
 }
 
-#slide-16 {
+#slide-17 {
   align-items: center;
 }
 
-#slide-16 .visual {
+#slide-17 .visual {
   min-height: 0;
   height: 520px;
   align-self: center;
 }
 
-#slide-16 .visual img {
+#slide-17 .visual img {
   object-position: center;
 }
 
@@ -545,7 +545,86 @@ ul {
   grid-row: span 2;
 }
 
-/* ===== Слайд 15: фото для вдохновения ===== */
+/* ===== Слайд 15: продуктовая корзина ===== */
+.basket-slide {
+  display: block;
+  padding: 48px 58px;
+  background:
+    radial-gradient(circle at 18% 14%, rgba(203,212,183,.48), transparent 32%),
+    radial-gradient(circle at 74% 74%, rgba(216,205,180,.28), transparent 34%),
+    linear-gradient(180deg, #faf7ee 0%, #efe8d7 100%);
+}
+
+.basket-slide .content {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  justify-content: flex-start;
+}
+
+.basket-slide h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 700;
+  color: #2f4036;
+}
+
+.basket-slide .subtitle {
+  max-width: none;
+  margin-top: 14px;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #48544c;
+}
+
+.basket-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 250px);
+  gap: 0;
+  margin-top: 30px;
+  border-radius: 0;
+}
+
+.basket-cell {
+  min-width: 0;
+  position: relative;
+  display: block;
+  padding: 10px 18px;
+}
+
+.basket-cell:nth-child(1),
+.basket-cell:nth-child(2),
+.basket-cell:nth-child(4),
+.basket-cell:nth-child(5) {
+  border-right: 1px solid rgba(101, 112, 79, .28);
+}
+
+.basket-cell:nth-child(-n+3) {
+  border-bottom: 1px solid rgba(101, 112, 79, .28);
+}
+
+.basket-cell img {
+  position: absolute;
+  max-width: 56%;
+  max-height: 72%;
+  display: block;
+  object-fit: contain;
+}
+
+.basket-cell img:first-child {
+  left: 14px;
+  top: 14px;
+}
+
+.basket-cell img:last-child {
+  right: 14px;
+  bottom: 14px;
+}
+
+/* ===== Слайд 16: фото для вдохновения ===== */
 .inspiration-slide {
   display: block;
   padding: 54px 58px;
@@ -1247,7 +1326,7 @@ ul {
   .cover {
     min-height: 0;
   }
-  #slide-16 .visual {
+  #slide-17 .visual {
     height: 125mm;
   }
 }
@@ -1281,7 +1360,7 @@ ul {
 </head>
 <body>
 <nav class="topbar">
-  <a href="#slide-1">1</a><a href="#slide-2">2</a><a href="#slide-3">3</a><a href="#slide-4">4</a><a href="#slide-5">5</a><a href="#slide-6">6</a><a href="#slide-7">7</a><a href="#slide-8">8</a><a href="#slide-9">9</a><a href="#slide-10">10</a><a href="#slide-11">11</a><a href="#slide-12">12</a><a href="#slide-13">13</a><a href="#slide-14">14</a><a href="#slide-15">15</a><a href="#slide-16">16</a>
+  <a href="#slide-1">1</a><a href="#slide-2">2</a><a href="#slide-3">3</a><a href="#slide-4">4</a><a href="#slide-5">5</a><a href="#slide-6">6</a><a href="#slide-7">7</a><a href="#slide-8">8</a><a href="#slide-9">9</a><a href="#slide-10">10</a><a href="#slide-11">11</a><a href="#slide-12">12</a><a href="#slide-13">13</a><a href="#slide-14">14</a><a href="#slide-15">15</a><a href="#slide-16">16</a><a href="#slide-17">17</a>
 </nav>
 <main class="deck">
   
@@ -1446,7 +1525,7 @@ ul {
               </article>
               <article class="protein-card">
                 <h3>Папа</h3>
-                <p>Рыба / морепродукты / яйца / тофу</p>
+                <p>Рыба / креветки / яйца / тофу</p>
               </article>
             </div>
           </div>
@@ -1498,10 +1577,11 @@ ul {
               <ul>
                 <li>говяжий язык</li>
                 <li>куриные/говяжие сердца</li>
-                <li>печень - тушить</li>
+                <li>печень</li>
               </ul>
               <p>Как использовать:</p>
               <ul>
+                <li>тушить </li>
                 <li>добавлять в рагу</li>
                 <li>паштет</li>
                 <li>делать мягкие котлеты</li>
@@ -1843,8 +1923,45 @@ ul {
       </div>
     </section>
 
-    <section class="slide inspiration-slide" id="slide-15">
+    <section class="slide basket-slide" id="slide-15">
       <div class="slide-num">15</div>
+      <div class="decor decor-a"></div>
+      <div class="decor decor-b"></div>
+      <div class="content">
+        <div class="eyebrow">family nutrition</div>
+        <h1>Готовка без героизма</h1>
+        <p class="subtitle">Продуктовая корзина</p>
+        <div class="basket-grid">
+          <div class="basket-cell">
+            <img src="sample-2.png" alt="">
+            <img src="sample-3.png" alt="">
+          </div>
+          <div class="basket-cell">
+            <img src="sample-1.png" alt="">
+            <img src="sample-9.png" alt="">
+          </div>
+          <div class="basket-cell">
+            <img src="sample-7.png" alt="">
+            <img src="sample-12.png" alt="">
+          </div>
+          <div class="basket-cell">
+            <img src="sample-5.png" alt="">
+            <img src="sample-6.png" alt="">
+          </div>
+          <div class="basket-cell">
+            <img src="sample-4.png" alt="">
+            <img src="sample-11.png" alt="">
+          </div>
+          <div class="basket-cell">
+            <img src="sample-8.png" alt="">
+            <img src="sample-10.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide inspiration-slide" id="slide-16">
+      <div class="slide-num">16</div>
       <div class="decor decor-a"></div>
       <div class="decor decor-b"></div>
       <div class="content">
@@ -1876,8 +1993,8 @@ ul {
       </div>
     </section>
 
-    <section class="slide final" id="slide-16">
-      <div class="slide-num">16</div>
+    <section class="slide final" id="slide-17">
+      <div class="slide-num">17</div>
       <div class="decor decor-a"></div>
       <div class="decor decor-b"></div>
       <div class="content">
