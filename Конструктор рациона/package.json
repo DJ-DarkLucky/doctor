@@ -1,0 +1,16 @@
+{
+  "name": "konstruktor-raciona-export",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install:browser": "playwright install chromium",
+    "export:pdf": "node scripts/export-pdf.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2"
+  },
+  "dependencies": {
+    "@twemoji/svg": "^15.0.0",
+    "twemoji": "^14.0.2"
+  }
+}

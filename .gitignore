@@ -1,0 +1,12 @@
+# Local dependencies
+node_modules/
+
+# Generated PDF export artifacts
+Конструктор рациона/.pdf-export/
+Конструктор рациона/konstruktor-raciona-family.pdf
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

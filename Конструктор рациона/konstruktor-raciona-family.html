@@ -142,17 +142,17 @@ h1 {
   object-fit: cover;
 }
 
-#slide-15 {
+#slide-16 {
   align-items: center;
 }
 
-#slide-15 .visual {
+#slide-16 .visual {
   min-height: 0;
   height: 520px;
   align-self: center;
 }
 
-#slide-15 .visual img {
+#slide-16 .visual img {
   object-position: center;
 }
 
@@ -280,10 +280,10 @@ ul {
 
 .nutrient-slide h1 {
   max-width: 820px;
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 52px;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   color: #2f4036;
 }
 
@@ -491,10 +491,10 @@ ul {
 }
 
 .meal-examples-slide h1 {
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 50px;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   color: #2f4036;
 }
 
@@ -545,6 +545,55 @@ ul {
   grid-row: span 2;
 }
 
+/* ===== Слайд 15: фото для вдохновения ===== */
+.inspiration-slide {
+  display: block;
+  padding: 54px 58px;
+}
+
+.inspiration-slide .content {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  justify-content: flex-start;
+}
+
+.inspiration-slide h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 58px;
+  line-height: 1;
+  font-weight: 700;
+  color: #2f4036;
+}
+
+.inspiration-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: 245px 245px;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.inspiration-photo {
+  min-width: 0;
+  overflow: hidden;
+  border: 2px solid rgba(101, 112, 79, .22);
+  border-radius: 18px;
+  background: rgba(255, 255, 251, .72);
+}
+
+.inspiration-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.inspiration-photo.tall-photo {
+  grid-row: span 2;
+}
+
 /* ===== Слайд 9: быстрые сборки, когда нет времени ===== */
 .quick-meals-slide {
   display: block;
@@ -560,10 +609,10 @@ ul {
 
 .quick-meals-slide h1 {
   max-width: 980px;
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 66px;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   color: #2f4036;
 }
 
@@ -609,7 +658,8 @@ ul {
   place-items: center;
   background: #3b8a59;
   color: #fff;
-  font-size: 25px;
+  font-size: 28px;
+  line-height: 1;
 }
 
 .quick-meal-card h3 {
@@ -668,10 +718,10 @@ ul {
 
 .prep-slide h1 {
   max-width: 900px;
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 62px;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   color: #2f4036;
 }
 
@@ -751,10 +801,10 @@ ul {
 
 .salad-slide h1 {
   margin: 8px 0 18px;
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 72px;
   line-height: .96;
-  font-weight: 800;
+  font-weight: 700;
   color: #20372b;
 }
 
@@ -812,13 +862,19 @@ ul {
   color: #20372b;
 }
 
-/* ===== Слайды 13-14: компоненты салата ===== */
+/* ===== Слайды 12-13: компоненты салата ===== */
 .salad-components-slide {
   display: block;
   padding: 42px 46px;
   background:
     linear-gradient(rgba(250, 247, 238, .88), rgba(239, 232, 215, .9)),
     url("spinach.jpg") center / cover no-repeat;
+}
+
+#slide-13 {
+  background:
+    linear-gradient(rgba(250, 247, 238, .5), rgba(239, 232, 215, .01)),
+    url("slide13.jpg") center / cover no-repeat;
 }
 
 .salad-components-slide .content {
@@ -829,10 +885,10 @@ ul {
 
 .salad-components-slide h1 {
   margin: 0 0 24px;
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 48px;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   color: #20372b;
 }
 
@@ -1001,12 +1057,6 @@ ul {
   background: rgba(231, 240, 226, .9);
 }
 
-.lunch-note {
-  margin-top: 22px;
-  padding: 20px 26px;
-  border-radius: 18px;
-  background: rgba(199, 225, 199, .78);
-}
 
 /* ===== Слайд 1: обложка ===== */
 .cover {
@@ -1072,10 +1122,10 @@ ul {
 }
 .pasta-slide h1 {
   max-width: 980px;
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 58px;
   line-height: 1.08;
-  font-weight: 800;
+  font-weight: 700;
   color: #2f4036;
 }
 .pasta-slide .subtitle {
@@ -1197,7 +1247,7 @@ ul {
   .cover {
     min-height: 0;
   }
-  #slide-15 .visual {
+  #slide-16 .visual {
     height: 125mm;
   }
 }
@@ -1231,7 +1281,7 @@ ul {
 </head>
 <body>
 <nav class="topbar">
-  <a href="#slide-1">1</a><a href="#slide-2">2</a><a href="#slide-3">3</a><a href="#slide-4">4</a><a href="#slide-5">5</a><a href="#slide-6">6</a><a href="#slide-7">7</a><a href="#slide-8">8</a><a href="#slide-9">9</a><a href="#slide-10">10</a><a href="#slide-11">11</a><a href="#slide-12">12</a><a href="#slide-13">13</a><a href="#slide-14">14</a><a href="#slide-15">15</a>
+  <a href="#slide-1">1</a><a href="#slide-2">2</a><a href="#slide-3">3</a><a href="#slide-4">4</a><a href="#slide-5">5</a><a href="#slide-6">6</a><a href="#slide-7">7</a><a href="#slide-8">8</a><a href="#slide-9">9</a><a href="#slide-10">10</a><a href="#slide-11">11</a><a href="#slide-12">12</a><a href="#slide-13">13</a><a href="#slide-14">14</a><a href="#slide-15">15</a><a href="#slide-16">16</a>
 </nav>
 <main class="deck">
   
@@ -1399,7 +1449,6 @@ ul {
                 <p>Рыба / морепродукты / яйца / тофу</p>
               </article>
             </div>
-            <p class="lunch-note">Суп варим на 2 дня — экономия времени без потери качества.</p>
           </div>
         </div>
       </div>
@@ -1794,8 +1843,41 @@ ul {
       </div>
     </section>
 
-    <section class="slide final" id="slide-15">
+    <section class="slide inspiration-slide" id="slide-15">
       <div class="slide-num">15</div>
+      <div class="decor decor-a"></div>
+      <div class="decor decor-b"></div>
+      <div class="content">
+        <div class="eyebrow">family nutrition</div>
+        <h1>Для вдохновения</h1>
+        <div class="inspiration-grid">
+          <article class="inspiration-photo">
+            <img src="slide15new.jpg" alt="">
+          </article>
+          <article class="inspiration-photo">
+            <img src="slide15new-1.jpg" alt="">
+          </article>
+          <article class="inspiration-photo">
+            <img src="slide15new-2.jpg" alt="">
+          </article>
+          <article class="inspiration-photo tall-photo">
+            <img src="slide15new-6.jpg" alt="">
+          </article>
+          <article class="inspiration-photo">
+            <img src="slide15new-3.jpg" alt="">
+          </article>
+          <article class="inspiration-photo">
+            <img src="slide15new-4.jpg" alt="">
+          </article>
+          <article class="inspiration-photo">
+            <img src="slide15new-5.jpg" alt="">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide final" id="slide-16">
+      <div class="slide-num">16</div>
       <div class="decor decor-a"></div>
       <div class="decor decor-b"></div>
       <div class="content">
